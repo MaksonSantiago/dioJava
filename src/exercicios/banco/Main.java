@@ -2,7 +2,7 @@ package exercicios.banco;
 import java.util.Scanner;
 
 public class Main {
-
+// Scanner para solicitar entrada do usuário
     private final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -10,7 +10,9 @@ public class Main {
         int opcao;
 
         System.out.println("=============  BEM-VINDO  =============");
+// Criação da conta bancária
         conta.criarConta(scanner);
+// Menu de escolha de ação
         do{
             System.out.println("Informe qual ação deseja:\n1: Consultar saldo\n2: Depositar dinheiro\n3: Consultar cheque especial\n4: Sacar dinheiro\n5: Pagar um boleto\n6: Verificar se a conta está usando cheque especial\n7: Sair");
             opcao = scanner.nextInt();
